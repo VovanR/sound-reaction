@@ -16,7 +16,7 @@ Demo: [vovanr.github.io/sound-reaction][demo]
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
-[demo]: http://vovanr.github.io/sound-reaction
+[demo]: https://vovanr.github.io/sound-reaction
 
 [codestyle-url]: https://github.com/sindresorhus/xo
 [codestyle-image]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square
