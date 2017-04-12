@@ -1,8 +1,13 @@
+/* global document fetch soundManager */
+/* eslint arrow-parens: "off" */
+
 const getElements = (elementName) => () => document.querySelectorAll(elementName)
 const getButtonElements = getElements('button')
 
-const addListener = (eventName) => (eventHandler) => (element) => {element.addEventListener(eventName, eventHandler)}
+const addListener = (eventName) => (eventHandler) => (element) => element.addEventListener(eventName, eventHandler)
 const addClickListener = addListener('click')
+
+const getSoundByName = (soundName, soundList) => (soundList[soundName])
 
 const onClick = (soundList) => (event) => {
   soundManager.createSound({
@@ -13,7 +18,6 @@ const onClick = (soundList) => (event) => {
 
 const responseToJSON = (response) => response.json()
 const fetchSoundList = () => fetch('sound-list.json').then(responseToJSON).catch(console.error)
-const getSoundByName = (soundName, soundList) => (soundList[soundName])
 
 const buttons = getButtonElements()
 const forEachButton = (addClickEventListener) => buttons.forEach(addClickEventListener)
