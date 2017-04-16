@@ -3,15 +3,14 @@
 
 const SOUND_LIST_URL = 'sounds/sound-list.json'
 
-const addEventListener = (eventName) => (eventHandler) => (element) => element.addEventListener(eventName, eventHandler)
-const addClickEventListener = addEventListener('click')
-
 const getContainer = () => document.getElementById('app')
 const createButtonStack = () => document.createDocumentFragment()
-const createElement = (elementName) => document.createElement(elementName)
-const createButtonElement = () => {
-  const button = createElement('button')
+const createButtonElement = ({id, name}) => {
+  const button = document.createElement('button')
   button.setAttribute('type', 'button')
+  button.disabled = true
+  button.textContent = name
+  button.setAttribute('name', id)
   return button
 }
 const enableSoundButton = (button) => () => {
@@ -19,16 +18,10 @@ const enableSoundButton = (button) => () => {
 }
 const preloadSound = ({id, url, onload}) => soundManager.createSound({id, url, onload, autoLoad: true})
 const playSound = (event) => soundManager.play(event.target.name)
-const addClickPlaySoundEventListener = addClickEventListener(playSound)
 const createSoundButton = (sound) => {
   const {id, name, url} = sound
-  const button = createButtonElement()
-  button.textContent = name
-  button.setAttribute('name', id)
-  button.disabled = true
-  const onload = enableSoundButton(button)
-  preloadSound({id, url, onload})
-  addClickPlaySoundEventListener(button)
+  const button = createButtonElement({id, name})
+  preloadSound({id, url, onload: enableSoundButton(button)})
   return button
 }
 const appendElementTo = (container) => (element) => container.appendChild(element)
@@ -38,11 +31,12 @@ const appendSoundButtonsTo = (buttonStack) => (soundButtons) => {
   return buttonStack
 }
 
-const responseToJSON = (response) => response.json()
-const fetchSoundList = () => fetch(SOUND_LIST_URL).then(responseToJSON).catch(console.error)
+const fetchSoundList = () => fetch(SOUND_LIST_URL).then((response) => response.json()).catch(console.error)
 
 fetchSoundList()
   .then(soundList => soundList.sounds)
   .then(sounds => sounds.map(createSoundButton))
   .then(appendSoundButtonsTo(createButtonStack()))
   .then(appendElementTo(getContainer()))
+
+getContainer().addEventListener('click', playSound)
