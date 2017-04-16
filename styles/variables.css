@@ -1,0 +1,10 @@
+:root {
+  --button-color: gray;
+  --button-border-color: silver;
+  --button-background-color: transparent;
+  --disabled-button-color: silver;
+  --disabled-button-border-color: silver;
+  --disabled-button-background-color: rgba(0, 0, 0, 0.05);
+  --active-button-border-color: #2ecc71;
+  --active-button-background-color: #2ecc71;
+}

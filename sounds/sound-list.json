@@ -1,0 +1,34 @@
+{
+  "sounds": [
+    {
+      "id": "horn",
+      "name": "Horn",
+      "url": "sounds/27880__stickinthemud__bike-horn-1.wav"
+    },
+    {
+      "id": "hybridHorn",
+      "name": "Hybrid Horn",
+      "url": "sounds/378106__domainhunter__2006-escape-hybrid-horn-honk-long.wav"
+    },
+    {
+      "id": "industrialAirHorn",
+      "name": "Industrial Air Horn",
+      "url": "sounds/131930__mcpable__industrial-air-horn.wav"
+    },
+    {
+      "id": "hockeyHorn",
+      "name": "Hockey Horn",
+      "url": "sounds/361537__ylearkisto__jaakiekko-summeri-ice-hockey-buzzer-at-the-end-of-the-period-audience-shouting-wc-tournament-1997-helsinki.wav"
+    },
+    {
+      "id": "bell",
+      "name": "Bell",
+      "url": "sounds/74920__juskiddink__bell6.wav"
+    },
+    {
+      "id": "receptionBell",
+      "name": "Reception Bell",
+      "url": "sounds/264594__cdrk__reception-bell.flac"
+    }
+  ]
+}
