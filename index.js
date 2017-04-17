@@ -8,13 +8,13 @@ const createButtonStack = () => document.createDocumentFragment()
 const createButtonElement = ({id, name}) => {
   const button = document.createElement('button')
   button.setAttribute('type', 'button')
-  button.disabled = true
+  // button.disabled = true
   button.textContent = name
   button.setAttribute('name', id)
   return button
 }
 const enableSoundButton = (button) => () => {
-  button.disabled = false
+  // button.disabled = false
 }
 const preloadSound = ({id, url, onload}) => soundManager.createSound({id, url, onload, autoLoad: true})
 const playSound = (event) => soundManager.play(event.target.name)
