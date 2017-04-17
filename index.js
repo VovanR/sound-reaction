@@ -13,8 +13,8 @@ const createButtonElement = ({id, name}) => {
   button.setAttribute('name', id)
   return button
 }
-const enableSoundButton = (button) => () => {
-  // button.disabled = false
+const enableSoundButton = (button) => (success) => {
+  button.disabled = !success
 }
 const preloadSound = ({id, url, onload}) => soundManager.createSound({id, url, onload, autoLoad: true})
 const playSound = (event) => soundManager.play(event.target.name)
