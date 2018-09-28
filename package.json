@@ -2,16 +2,18 @@
   "name": "sound-reaction",
   "version": "0.0.0",
   "description": "",
-  "main": "index.html",
+  "license": "MIT",
+  "repository": "VovanR/sound-reaction",
+  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
   "scripts": {
+    "start": "http-server .",
     "test": "xo"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VovanR/sound-reaction.git"
+  "main": "index.html",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "xo": "^0.18.1"
   },
-  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/VovanR/sound-reaction/issues"
   },
@@ -19,8 +21,5 @@
   "xo": {
     "space": true,
     "semicolon": false
-  },
-  "devDependencies": {
-    "xo": "^0.18.1"
   }
 }

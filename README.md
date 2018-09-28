@@ -18,5 +18,5 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
 [demo]: https://vovanr.github.io/sound-reaction
 
-[codestyle-url]: https://github.com/sindresorhus/xo
+[codestyle-url]: https://github.com/xojs/xo
 [codestyle-image]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square
