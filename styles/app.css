@@ -1,11 +1,12 @@
 .app {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 100%;
 }
 
 .app:empty {
   position: relative;
+  grid-template-columns: auto;
 }
 
 .app:empty::after {
@@ -13,12 +14,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   font-size: 300%;
   color: gray;
   font-family: monospace;
-  animation: 0.5s cubic-bezier(.4,0,.2,1) .5s infinite alternate opacity;
+  animation: 0.5s cubic-bezier(0.4, 0, 0.2, 1) .5s infinite alternate opacity;
   opacity: 0;
 }
 
