@@ -1,5 +1,8 @@
 # sound-reaction
 
+<img align="right" width="120" height="120"
+     src="./logo.svg" alt="Sound Reaction logo">
+
 [![XO code style][codestyle-image]][codestyle-url]
 
 Demo: [vovanr.github.io/sound-reaction][demo]

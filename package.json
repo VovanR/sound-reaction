@@ -4,7 +4,7 @@
   "description": "",
   "license": "MIT",
   "repository": "VovanR/sound-reaction",
-  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
+  "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
   "scripts": {
     "start": "http-server .",
     "test": "xo"
