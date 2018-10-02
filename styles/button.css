@@ -7,20 +7,24 @@ button {
 button {
   color: var(--button-color);
   background: var(--button-background-color);
-  box-shadow: none;
   border: none;
-  box-shadow: inset 0 0 0 1px white, inset 0 0 0 2px var(--button-border-color);
+  box-shadow: inset 0 0 0 1px #fff,
+              inset 0 0 0 2px var(--button-border-color);
   transition: all ease 0.25s;
 }
 
 button:disabled {
   color: var(--disabled-button-color);
   background: var(--disabled-button-background-color);
-  box-shadow: inset 0 0 0 1px white, inset 0 0 0 2px var(--disabled-button-border-color);
+  box-shadow: inset 0 0 0 1px #fff,
+              inset 0 0 0 2px var(--disabled-button-border-color);
 }
 
 button:focus {
-  box-shadow: inset 0 0 0 1px white, inset 0 0 0 2px var(--button-border-color), inset 0 0 0 4px white, inset 0 0 0 6px var(--active-button-border-color);
+  box-shadow: inset 0 0 0 1px #fff,
+              inset 0 0 0 2px var(--button-border-color),
+              inset 0 0 0 4px #fff,
+              inset 0 0 0 6px var(--active-button-border-color);
   outline: none;
 }
 

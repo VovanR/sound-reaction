@@ -16,7 +16,6 @@
   align-items: center;
   font-size: 300%;
   color: gray;
-  font-family: monospace;
   animation: 0.5s cubic-bezier(0.4, 0, 0.2, 1) .5s infinite alternate opacity;
   opacity: 0;
 }

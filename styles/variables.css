@@ -1,4 +1,6 @@
 :root {
+  --font-family: monospace;
+
   --button-color: gray;
   --button-border-color: silver;
   --button-background-color: transparent;
