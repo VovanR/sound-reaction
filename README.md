@@ -5,6 +5,8 @@
 
 [![XO code style][codestyle-image]][codestyle-url]
 
+> Sound for any situation
+
 Demo: [vovanr.github.io/sound-reaction][demo]
 
 ## Resources

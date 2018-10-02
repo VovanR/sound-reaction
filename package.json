@@ -1,7 +1,8 @@
 {
   "name": "sound-reaction",
   "version": "0.0.0",
-  "description": "",
+  "description": "Sound for any situation",
+  "private": true,
   "license": "MIT",
   "repository": "VovanR/sound-reaction",
   "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
